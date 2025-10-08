@@ -1,0 +1,45 @@
+@font-face {
+  font-family: ff2;
+  src: url(../assets/fonts/Arimo-Regular.ttf);
+}
+
+:root {
+  --primary-color: #4b0082;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: ff2;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 10px;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+input[type="submit"]:active {
+  opacity: 0.8;
+}
+
+input[type="submit"]:disabled {
+  background-color: #aaa;
+}
+
+

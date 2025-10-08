@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class > Aulas particulares</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+      integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <a href="/" class="logo">
+          <img src="assets/img/logo.png" alt="logo" width="30" height="30" />
+          <h1>Class</h1>
+        </a>
+      </div>
+      <div class="center">
+        <nav>
+          <a href="#">Cursos</a>
+          <a href="#">Artigos</a>
+          <a href="#">Bolsas</a>
+           <a href="#">Podcast</a>
+        </nav>
+      </div>
+      <div class="right">
+        <nav>
+          <a href="#"><i class="la la-user-friends"></i><span></span></a>
+          <a href="#"><i class="la la-whatsapp"></i><span></span></a>
+          <a href="#"><i class="la la-facebook"></i></a>
+          <a href="#"><i class="la la-instagram"></i></a>
+          <a href="#"><i class="la la-twitter"></i></a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <form>
+        <h2>Marque sua aula num click!</h2>
+        <div>
+          <label for="level">Nível académico:</label>
+          <select name="level" id="level" autofocus="true">
+            <option value="0">Primário</option>
+            <option value="1">Secundário</option>
+            <option value="2" selected>Superior</option>
+          </select>
+          <div class="subjects"></div>
+        </div>
+        <label for="desc">Descrição:</label>
+        <textarea
+          name="desc"
+          id="desc"
+          rows="7"
+          placeholder="Descreva a sua requisição"
+          required
+        ></textarea>
+        <label for="contact">Contacto:</label>
+        <input type="text" name="contact" id="contact" placeholder="Introduza seu contacto" required />
+        <label for="email">Email (opcional):</label>
+        <input type="email" name="email" id="email" placeholder="Introduza seu email" />
+        <label for="email">Localização:</label>
+        <select name="location" id="location">
+          <option value="">--Seleccionar localização--</option>
+          <option value="0">KaTembe</option>
+          <option value="1">KaMavota</option>
+        </select>
+        <input type="submit" name="submit" id="submit" value="Submeter" />
+      </form>
+    </main>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 2px 2px #eee;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  height: 40px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 5;
+}
+
+.right nav a {
+  margin-right: 10px;
+  background-color: #eee;
+  color: var(--primary-color);
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+}
+
+.center nav a {
+  margin: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 520px;
+  margin: auto;
+  padding: 30px 30px;
+  min-height: 470px;
+}
+
+form h2 {
+  text-align: center;
+  color: coral;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  outline: none;
+  background-color: var(--primary-color);
+  width: 100%;
+  margin-top: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+label {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary-color);
+}
+
+.subjects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subjects div {
+ margin-bottom: 5px;
+}
+
+
+@media screen and (max-width: 404px) {
+  .center,
+  .right {
+    display: none;
+  }
+
+  form {
+    width: unset;
+  }
+}
